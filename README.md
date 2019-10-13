@@ -6,13 +6,13 @@ A meta package containing various CUREDIT editors.
 
 ### MarkTown
 
-GF Markdown and Asciidoc based note editor with ConText annotation support
+GF Markdown and Asciidoc based hyperlink card editor with ConText annotation support
 
-1. Accepts gfm or asciidoc hyperlinks with ConText
-2. A hyperlink always has a default annotation block unless a specific one is specified 
-3. When n hyperlinks are provided but only one annotation block is provided, the node can be exploded to n nodes with the 1 hyperlink each and the same annotation block in each node
+1. Accepts gfm or asciidoc hyperlinks with Context annotations. 
+2. A hyperlink always has a default annotation block unless a specific one is specified. 
+3. When n hyperlinks are provided but only one annotation block is provided, the node can be exploded to n nodes with the 1 hyperlink each and the same annotation block in each node. 
 4. When n hyperlinks are provided but only m of the n links have their own annotation blocks each, only those m links can be separated into m new nodes. 
-5. A hyperlink has 
+5. A hyperlink card has title and description and may have content preview(s), image and icon. 
 
 ### TreeKey
 
@@ -41,7 +41,7 @@ Radial context menu for generating annotations based on
 
 ### n-Graf Mod
 
-URI based automation mods
+URI based automation mods, see gitlab repo Readme for full API description 
 
 
 
