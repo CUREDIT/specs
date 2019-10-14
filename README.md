@@ -2,7 +2,7 @@ Specifications for curedit ecosystem components to transform file/web browsers t
 
 ## BreakDown
 
-A meta package containing a family of CUREDIT editors where the key-value of the root node of the tree being edited is a composite of all its children nodes' key-value. 
+A meta package containing a family of CUREDIT editors where the key-value pair of the root node of the tree being edited is a composite obtained from all its children nodes' key-value. 
 
 ````
 type ConTree<T> = {
@@ -13,7 +13,7 @@ type ConTree<T> = {
 }
 ````
 
-### MarkTown: Array<Card>
+### MarkTown: Array\<Card\>
 
 ````
 type Card = {
@@ -42,7 +42,7 @@ Notes:
 2. Other use cases like messaging and automation are explained in the projects below. 
 3. A MarkTown card will be hereafter referred to as card (instance) or Card (type). 
 
-### TreeKey: ConTree<Card>
+### TreeKey: ConTree\<Card\>
 
 An editor for trees consisting of nodes with URI key and MarkTown card value
 
@@ -55,17 +55,31 @@ An editor for trees consisting of nodes with URI key and MarkTown card value
 
 Notes:
 
-1. A MarkTown card composed of multiple hyperlinks, which can be exploded, or different MarkTown cards, when put together and converted into a TreeKey structure will be hereafter referred to as a playlist (instance) or Playlist (type). 
-2. A Playlist is an atomic type for messaging and automation components of CUREDIT in the sense that reading (and slicing from the TreeKey store) on this immutable type, is guaranteed to not cause any data races. 
+1. A card when converted into a TreeKey structure will be hereafter referred to as a playlist (instance) or Playlist (type). 
+2. A Playlist is an atomic type for messaging and automation components of CUREDIT in the sense that reading (and slicing from the TreeKey store) on this immutable type is guaranteed to not cause any data races. 
 3. A single card can be converted to a trivial playlist using preset defaults for root node and meta-root node. 
 
-### Gredict: ConTree<Playlist>
+### Gredict: ConTree\<Playlist\>
 
 An editor for trees consisting of nodes with a unique concept name key (hereafter referred to as a word) and TreeKey tree value (hereafter referred to as its meanings)
 
-1. A root node key when composed from its children node keys may have a root node value entirely different from the sum/product of its children node values, unlike the case with that of Cards or Playlists.
-2. Meanings may be defined semantically with ConText annotations and/or Hybridge API calls or behaviorally using functions in either any JVM language or any JS engine supported language.
-3. A word can be one or a sequence of natural language words, URNs, URIs or any custom unique identifier. 
+1. A root node key when composed from its children node keys may have a root node value entirely different from the composite of its children node values, unlike the case with that of Cards or Playlists.
+2. Meanings may be defined semantically with ConText annotations and/or Hybridge API calls on words or behaviorally using ConText annotations on functions written in either any JVM language (when server side sandbox is available) or any transpile-to-JS language (when web embedding is available).
+3. A word can be a sequence of natural language words, URNs, URIs or any custom unique identifier. 
+4. Since a word is mapped to multiple meanings, a particular meaning (by context) is accessed by using a ConText ID and a set of applicable meanings (by structure) can be accessed by Content ID. 
+5. Semantic annotations can be aggregated whereas behavioral annotations can be composed. 
+6. A word in a semantic annotation can be further unfolded to fetch more semantically annotated words whereas a function in a behavioral annotation may output a lazily invocable reference to other behaviorally annotated functions, ad infinitum. 
+
+Notes:
+
+1. A trivial use case would be to create a
+
+  i. a natural language dictionary or
+  ii. a x language to y language dictionary. 
+  
+2. A RAD or rapid prototyping tool can developed using a function dictionary. 
+
+3. The components that follow are built using the approach in 1.ii and 2.
 
 
 ## ConText
