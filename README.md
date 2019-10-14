@@ -72,13 +72,10 @@ An editor for trees consisting of nodes with a unique concept name key (hereafte
 
 Notes:
 
-1. A trivial use case would be to create a
-
-  i. a natural language dictionary or
-  ii. a x language to y language dictionary. 
-  
+1. A trivial use case would be to create 
+ * a natural language dictionary or
+ * a x language to y language dictionary. 
 2. A RAD or rapid prototyping tool can developed using a function dictionary. 
-
 3. The components that follow are built using the approach in 1.ii and 2.
 
 
@@ -105,11 +102,14 @@ Radial context menu for generating annotations based on
 
 URI based automation mods, see gitlab curedit repo's Readme for full API description 
 
-
+- [ ] Popup mode with detachable, draggable, autohiding media controls (prev, play/pause, next) and playlist selector
+- [ ] Context menu with prev, play/pause, next and add page options
+- [ ] Bookmarks to watched folders (set in settings) are automatically added to a playlist of the folder's name
+- [ ] Options page displays TreeKey UI 
 
 ## h-Graf Mod
 
-Hypergraph KB mods 
+Hypergraph KB mods using the Gredict UI
 
 ### Hybridge API
 GRAKN RIFs and SKOS for Graql + SPARQL
