@@ -11,11 +11,12 @@ Hg is a browser extension that manages your bookmarks and browsing session using
 * Save/Share/Delete 
 
 Clicking 'Record' allows you to open as many links as you want without worrying about slow down, unresponsiveness or screen clutter. 
-You could open 1000s of links thanks to lazy loading. You can see only a specified number (see Buffer) of tabs at once in your tab bar but you can jump to any link from the session using the URL Playlist. 
-A recording is saved as a bookmarks folder and the resulting shareable Playlist can be viewed as a list, tree or map. 
+You could open 1000s of links thanks to lazy loading. You can see only a specified number (see Buffer) of tabs at once in your tab bar. You can still jump to any link from the session using the URL Playlist. 
+A recording is saved as a bookmarks folder and the resulting shareable playlist can be viewed as a list, tree or map. 
 Previous and Next buttons (un)load previous or next
 - tabs into view and 
 - links into buffered tabs
+
 Simply delete the bookmarks or bookmark folders to delete links or playlists respectively. 
 Share the playlist's generated URL to share the playlist. You can set your own domain as your playlist host. 
 
@@ -23,10 +24,11 @@ This extension is meant to showcase some of the capabilities of the components o
 
 
 Settings:
-Buffer: Max number of tabs open in a recording session
-Exclusions: Pages to exclude from recording eg searches
-Playlist view: Linear, Tree, Map
-Playlists Host: Url to POST your playlists 
+
+- Buffer: Max number of tabs open in a recording session
+- Exclusions: Pages to exclude from recording eg searches
+- Playlist view: Linear, Tree, Map
+- Playlists Host: Url to POST your playlists 
 
 
 ## BreakDown
