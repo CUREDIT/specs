@@ -16,7 +16,7 @@ These spaces contain value objects or records as atomic entries.
 
 ### Celluloid and Toroid spaces
 
-These spaces contain grid cells on a plane and torus, both of which are not allowed be moebius-like.
+These spaces contain grid cells on a plane and torus, neither of which are allowed be moebius-like.
 
 ### Helical and Spiral spaces
 
