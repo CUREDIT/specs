@@ -4,38 +4,33 @@
 
 Browser bookmarks and bookmark changes need to be provided as an observable stream via the hg-lib
 
-
 ### Hold bookmarks in memory
 
 Create a pouchdb-in-mem api.
 
-### Provide search, sort, open for bookmarks
+### Provide bookmarks CRUD UI
 
-## Create a drag-n-drop UI.
+### Create a drag-n-drop UI
 
 ### Provide bookmarks MarkTown card UI
+
+### Update bookmarks on reordered, moved, import
+
+### Provide search, sort, open for bookmarks
 
 ### Provide option to export and share playlists
 
 ### Update bookmarks on created, removed, changed
 
-### Update bookmarks on reordered, moved, import
+### Create folder based URI namespacing
 
-### Provide bookmarks CRUD UI
+### Provide option to explode a bookmark folder
 
+### Provide option to convert a bookmark folder to a playlist
 
+### Bookmark all selected or all opened tabs
 
-
-### Position bookmark sub-folders before URLs
-
-Create folder based URI namespacing.
-
-5. Provide option to explode a bookmark folder
-6. Provide option to convert a bookmark folder to a playlist
-
-
-11. Bookmark all selected or all opened tabs
-12. Create a MarkTown feed of bookmark cards
+### Create a MarkTown feed of bookmark cards
 
 ## Tabs
 
