@@ -1,6 +1,6 @@
 # Research and Development Projects
 
-These are based on dual categories in connected planar embeddings and points & tries based quadtrees or k-D trees. For instance we have discretely continous and continuously discrete data points. We also have countablY infinite and uncontably infinite objects. These objects and their morphisms form (dual) categories, f-algebras, wiring diagrams, string diagrams, petri-nets and hypergraphs. These are stato-dynamic and dynamically-static systems where the data is both lazily infinite and eagerly finite at the same time. Hence it can self-host itself in either the memory, cpu-cache, network-cache or some secondary storages.
+These are based on **dual** categories in connected planar embeddings and points & tries based quadtrees or k-D trees. For instance we have discretely continous and continuously discrete data points. We also have both a countably infinite and an uncountably finite object. These objects and their morphisms form (dual) categories, f-algebras, wiring diagrams, string diagrams, petri-nets and hypergraphs, depending on the context. These are stato-dynamic and dynamically-static systems where the data is both lazily infinite and eagerly finite at the same time. Hence it can self-host itself in either the memory, cpu-cache, network-end-2-end-cache or some secondary storages.
 
 Examples:
 
