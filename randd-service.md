@@ -13,13 +13,21 @@ Examples:
 
 Constant time retrieval of theoretically infinite-sized directories will be achieved using space-filling curves on planar pages. Any page can be trivially converted into a hypergraph. Path compressed, binary divided, balanced box decomposed, conjugable, and sliding middles with n-D orderings and hB AG/LSD trees with recursive partitioning are allowed on the pages.
 
+Buckets can be mapped to databases of any kind (sql, object-oriented, graph, key-value, columnar). Pages can be mapped to the content needed to render any page view for a page-oriented API.
+
 ## Queries and DSLs
 
-Constant time retrieval of directories and files of pages of data requires natural language query extensions with a simple boolean and/or bayesian logic embedded in it. These should allow for point and range (line) based retrievals. Grid files, EXCELL, MDEH, LHPE, PLOP Hashing, Linear Hashing, Dynamic Z Hashing, Quantile Hashing, Spiral Hashing and PK-trees are respectfully admissible in the queries and the DSLs as native and first class citizens for all kinds of queries but especially those based on features or relational locations.
+Constant time retrieval of directories and files of pages of data requires natural language query extensions with a simple boolean and/or bayesian logic embedded in it. These should allow for point and range (line) based retrievals.
+
+Key concepts: Grid files, EXCELL, MDEH, LHPE, PLOP Hashing, Linear Hashing, Dynamic Z Hashing, Quantile Hashing, Spiral Hashing and PK-trees are respectfully admissible in the queries and the DSLs as native and first class citizens for all kinds of queries but especially those based on features or relational locations.
+
+Queries represent different ways of projecting hypergraphical data into tabular and/or page-oriented data. DSLs provide different ways of composing queries and requests.
 
 ## Planar topological spaces
 
 These spaces contain value objects or records as atomic entries. These are usually represented with unit sized cells. The cell shapes, tilings and tesellations are dependent on the underlying plane and overarching composition rules. The ordering spaces should be of low computational and storage complexity themselves. This is easily achievable if a disciplined and rigorous implementation of various space-filling curves are iteratively applied on the space or plane, as suggested above.
+
+Conceptual spaces map physical spaces on a database using grid-based algebras and temporal spaces on a processing unit using complex fields.
 
 ### Celluloid and Toroid spaces
 
